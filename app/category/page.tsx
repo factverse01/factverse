@@ -1,9 +1,17 @@
-export default function CategoryPage() {
+import Navbar from "@/components/layout/Navbar";
+import FactCard from "@/components/facts/FactCard";
+import { getFirstFact } from "@/services/facts";
+
+export default async function Home() {
+  const fact = await getFirstFact();
+
   return (
-    <main className="p-10">
-      <h1 className="text-4xl font-bold">
-        Categories
-      </h1>
-    </main>
+    <>
+      <Navbar />
+
+      <main className="min-h-screen bg-gray-100 flex justify-center items-center">
+        <FactCard fact={fact} />
+      </main>
+    </>
   );
 }
