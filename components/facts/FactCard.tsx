@@ -9,7 +9,13 @@ export default function FactCard({ fact }: FactCardProps) {
     <div className="bg-white rounded-xl shadow-lg p-8 max-w-xl w-full">
 
       <h2 className="text-3xl font-bold">
-        {fact.title}
+        <h2 className="text-4xl font-bold mb-2">
+    {fact.title}
+</h2>
+
+<p className="text-gray-500 mb-6">
+    Discover something new every click.
+</p>
       </h2>
 
       <p className="mt-5 text-lg leading-8">
