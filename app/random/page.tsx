@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import FactCard from "@/components/facts/FactCard";
 import Navbar from "@/components/layout/Navbar";
 import { getRandomFact } from "@/services/facts";
